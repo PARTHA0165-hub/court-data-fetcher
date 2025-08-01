@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Details</title>
+</head>
+<body>
+    <h2>Case Details:</h2>
+    <p><strong>Name:</strong> {{ data.name }}</p>
+    <p><strong>Parties:</strong> {{ data.parties }}</p>
+    <p><strong>Filing Date:</strong> {{ data.filing_date }}</p>
+    <p><strong>Next Hearing:</strong> {{ data.next_hearing }}</p>
+    <p><strong>Order PDF:</strong> 
+        {% if data.latest_order != "N/A" %}
+            <a href="{{ data.latest_order }}" target="_blank">Download</a>
+        {% else %}
+            Not Available
+        {% endif %}
+    </p>
+
+    <br><br>
+    <a href="/">Back</a>
+</body>
+</html>
