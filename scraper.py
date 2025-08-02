@@ -17,7 +17,7 @@ def fetch_case_details(case_type, case_number, filing_year):
 
         # Simulating scraping logic for this demo
         parsed_result = {
-            "name": "A.Aathi",
+            "name": "S.Akash",
             "parties": f"{case_type}",
             "filing_date": f"01-01-{filing_year}",
             "next_hearing": "01-09-2025",
@@ -29,7 +29,7 @@ def fetch_case_details(case_type, case_number, filing_year):
 
     except Exception as e:
         return {
-            "Name": "N/A",
+            "name": "N/A",
             "parties": "N/A",
             "filing_date": "N/A",
             "next_hearing": "N/A",
